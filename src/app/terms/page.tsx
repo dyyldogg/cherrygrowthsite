@@ -15,7 +15,7 @@ export default function TermsOfService() {
           <p className="font-medium text-black/60 uppercase tracking-wider text-sm">Last updated: November 21, 2025</p>
 
           <p className="text-xl text-black/90">
-            Please read these Terms of Service ("Terms") carefully before using the Vindium LLC website and services.
+            Please read these Terms of Service ("Terms") carefully before using the CherryGrowth LLC website and services.
           </p>
         </div>
 
@@ -36,14 +36,14 @@ export default function TermsOfService() {
         <section className="space-y-4">
           <h3 className="text-2xl font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>3. Intellectual Property</h3>
           <p>
-            The service and its original content, features, and functionality are and will remain the exclusive property of Vindium LLC and its licensors.
+            The service and its original content, features, and functionality are and will remain the exclusive property of CherryGrowth LLC and its licensors.
           </p>
         </section>
 
         <section className="space-y-4">
           <h3 className="text-2xl font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>4. Limitation of Liability</h3>
           <p>
-            In no event shall Vindium LLC, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the service.
+            In no event shall CherryGrowth LLC, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the service.
           </p>
         </section>
 
@@ -57,7 +57,7 @@ export default function TermsOfService() {
         <section className="space-y-4">
           <h3 className="text-2xl font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>6. Contact Us</h3>
           <p>
-            If you have any questions about these Terms, please contact us at <a href="mailto:hello@vindium.ai" className="underline decoration-black/30 underline-offset-4 hover:decoration-black transition-all">hello@vindium.ai</a>.
+            If you have any questions about these Terms, please contact us at <a href="mailto:hello@cherrygrowth.com" className="underline decoration-black/30 underline-offset-4 hover:decoration-black transition-all">hello@cherrygrowth.com</a>.
           </p>
         </section>
       </div>

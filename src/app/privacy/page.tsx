@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
           <p className="font-medium text-black/60 uppercase tracking-wider text-sm">Last updated: November 21, 2025</p>
 
           <p className="text-xl text-black/90">
-            Vindium LLC ("we," "our," or "us") respects your privacy and is committed to protecting it through our compliance with this policy.
+            CherryGrowth LLC ("we," "our," or "us") respects your privacy and is committed to protecting it through our compliance with this policy.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
         <section className="space-y-4">
           <h3 className="text-2xl font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>5. Contact Us</h3>
           <p>
-            If you have any questions about this Privacy Policy, please contact us at <a href="mailto:hello@vindium.ai" className="underline decoration-black/30 underline-offset-4 hover:decoration-black transition-all">hello@vindium.ai</a>.
+            If you have any questions about this Privacy Policy, please contact us at <a href="mailto:hello@cherrygrowth.com" className="underline decoration-black/30 underline-offset-4 hover:decoration-black transition-all">hello@cherrygrowth.com</a>.
           </p>
         </section>
       </div>

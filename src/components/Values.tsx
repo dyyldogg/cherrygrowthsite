@@ -1,108 +1,59 @@
-import { Users, Heart } from "lucide-react";
+import { Users, ShieldCheck, GraduationCap } from "lucide-react";
 
 export default function Values() {
   return (
-    <section className="mx-auto mt-24 w-full max-w-6xl px-4">
-      <div className="rounded-2xl bg-[#111] text-white">
-        <div className="grid gap-10 p-6 sm:p-10 lg:grid-cols-[1fr_360px]">
-          <div>
-            <h2
-              className="text-3xl font-normal leading-tight tracking-tight sm:text-4xl"
-              style={{ fontFamily: "var(--font-playfair)" }}
-            >
-              Security and compliance
-            </h2>
-            <p className="mt-3 max-w-2xl text-sm text-white/80 subhead-copy sm:text-base">
-              Your trust is our priority. Our security and compliance practices are
-              designed to meet high regulatory standards, ensuring your firm’s
-              sensitive data stays protected.
-            </p>
-
-            <div className="mt-8 grid gap-8 sm:grid-cols-3">
-              <div>
-                <h3
-                  className="text-xl font-medium text-white"
-                  style={{ fontFamily: "var(--font-playfair)" }}
-                >
-                  Private workspace
-                </h3>
-                <ul className="mt-3 space-y-2 text-sm text-white/80 subhead-copy">
-                  <li>End to end encryption</li>
-                  <li>Enterprise grade security</li>
-                </ul>
-              </div>
-              <div>
-                <h3
-                  className="text-xl font-medium text-white"
-                  style={{ fontFamily: "var(--font-playfair)" }}
-                >
-                  Data privacy
-                </h3>
-                <ul className="mt-3 space-y-2 text-sm text-white/80 subhead-copy">
-                  <li>Protected data pipeline</li>
-                  <li>Controlled access</li>
-                </ul>
-              </div>
-              <div>
-                <h3
-                  className="text-xl font-medium text-white"
-                  style={{ fontFamily: "var(--font-playfair)" }}
-                >
-                  360° data protection
-                </h3>
-                <ul className="mt-3 space-y-2 text-sm text-white/80 subhead-copy">
-                  <li>Flexible deployments</li>
-                  <li>Team permissioning</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-start justify-center lg:justify-end">
-            <div className="rounded-xl border border-white/20 bg-white/5 p-6 text-center shadow-[0_0_30px_-10px_rgba(255,255,255,0.1)] backdrop-blur-sm">
-              <div className="text-sm uppercase tracking-wide text-white/70">We are</div>
-              <div className="mt-1 text-xl font-semibold text-white">SOC 2</div>
-              <div className="mt-1 text-sm text-white/70">Compliant</div>
-            </div>
-          </div>
+    <section className="mx-auto mt-32 w-full max-w-6xl px-4">
+      <div className="rounded-3xl bg-[#f5f5f0] p-8 sm:p-16">
+        <div className="mb-12 max-w-3xl">
+          <h2
+            className="text-3xl font-normal leading-tight tracking-tight text-black sm:text-4xl"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            Why clients trust CherryGrowth
+          </h2>
+          <p className="mt-4 text-lg text-black/70">
+            We don't just find you a freelancer. We partner with you to build a remote team that drives your business forward.
+          </p>
         </div>
 
-        <div className="border-t border-white/10 p-6 sm:p-10">
-          <div className="grid gap-10 lg:grid-cols-2">
-            <div className="flex items-start gap-5">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/10">
-                <Users className="h-6 w-6 text-white" strokeWidth={1.5} />
-              </div>
-              <div>
-                <h3
-                  className="text-xl font-medium text-white"
-                  style={{ fontFamily: "var(--font-playfair)" }}
-                >
-                  Human in the loop
-                </h3>
-                <p className="mt-2 max-w-xl text-sm text-white/80 subhead-copy">
-                  We keep finance professionals at the heart of every decision for accuracy
-                  and confidence at every step.
-                </p>
-              </div>
+        <div className="grid gap-10 md:grid-cols-3">
+          {/* Value 1 */}
+          <div className="flex flex-col items-start">
+            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-black text-white">
+              <GraduationCap className="h-6 w-6" strokeWidth={1.5} />
             </div>
-            <div className="flex items-start gap-5">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/10">
-                <Heart className="h-6 w-6 text-white" strokeWidth={1.5} />
-              </div>
-              <div>
-                <h3
-                  className="text-xl font-medium text-white"
-                  style={{ fontFamily: "var(--font-playfair)" }}
-                >
-                  Customer obsession
-                </h3>
-                <p className="mt-2 max-w-xl text-sm text-white/80 subhead-copy">
-                  We deliver tailored integrations and iterate fast so our offering evolves
-                  with you and provides value at every step.
-                </p>
-              </div>
+            <h3 className="text-xl font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>
+              College Educated
+            </h3>
+            <p className="mt-3 text-black/70 leading-relaxed">
+              Every assistant holds a university degree and undergoes rigorous testing for English proficiency and critical thinking.
+            </p>
+          </div>
+
+          {/* Value 2 */}
+          <div className="flex flex-col items-start">
+            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-black text-white">
+              <Users className="h-6 w-6" strokeWidth={1.5} />
             </div>
+            <h3 className="text-xl font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>
+              Dedicated to You
+            </h3>
+            <p className="mt-3 text-black/70 leading-relaxed">
+              Your assistant works exclusively for you. They learn your preferences, tools, and style, becoming a true team member.
+            </p>
+          </div>
+
+          {/* Value 3 */}
+          <div className="flex flex-col items-start">
+            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-black text-white">
+              <ShieldCheck className="h-6 w-6" strokeWidth={1.5} />
+            </div>
+            <h3 className="text-xl font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>
+              Secure & Managed
+            </h3>
+            <p className="mt-3 text-black/70 leading-relaxed">
+              We handle payroll, compliance, and security. All VAs sign NDAs and work within our secure infrastructure.
+            </p>
           </div>
         </div>
       </div>

@@ -3,19 +3,22 @@ import Link from "next/link";
 export default function FooterCta() {
   return (
     <section className="mx-auto mt-24 w-full max-w-6xl px-4">
-      <div className="relative overflow-hidden rounded-2xl p-10 text-center">
+      <div className="relative overflow-hidden rounded-2xl bg-[#f5f5f5] p-10 text-center sm:p-16">
         <h2
-          className="text-3xl font-normal leading-tight tracking-tight text-black sm:text-4xl"
+          className="mx-auto max-w-2xl text-3xl font-normal leading-tight tracking-tight text-black sm:text-4xl"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
-          Ready to Experience the Intelligence Gains Only Vindium Can Provide?
+          Stop letting busywork hold you back.
         </h2>
+        <p className="mx-auto mt-4 max-w-xl text-lg text-black/70">
+          Join hundreds of entrepreneurs who have reclaimed their time with CherryGrowth.
+        </p>
         <Link
           href="/contact"
-          className="mt-6 inline-block rounded-full bg-black px-6 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90 hover:scale-105 active:scale-95"
+          className="mt-8 inline-block rounded-full bg-black px-8 py-4 text-sm font-medium text-white shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl hover:opacity-90"
           style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}
         >
-          Book a personal call with the founders
+          Find your perfect assistant
         </Link>
       </div>
     </section>

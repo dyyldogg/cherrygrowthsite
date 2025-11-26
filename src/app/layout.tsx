@@ -17,9 +17,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Vindium — Private, secure, deal-aware AI for private-credit",
+  title: "CherryGrowth — Elite Virtual Assistants for High-Growth Businesses",
   description:
-    "Vindium gives private-credit lenders instant, secure deal context with RAG and verifiable infrastructure.",
+    "CherryGrowth matches you with top 1% college-educated virtual assistants. Save time and scale your business for a fraction of the cost of US hiring.",
 };
 
 export default function RootLayout({
