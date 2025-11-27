@@ -5,6 +5,7 @@ import CaseStudy from "@/components/CaseStudy";
 import Values from "@/components/Values";
 import FooterCta from "@/components/FooterCta";
 import Footer from "@/components/Footer";
+import LogoMarquee from "@/components/LogoMarquee";
 
 export default function Home() {
   return (
@@ -22,34 +23,19 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-black/80 animate-[drop-in_1000ms_cubic-bezier(0.2,0.8,0.2,1)_1.0s_both] opacity-0">
             Stop wasting time on admin, scheduling, and busywork. CherryGrowth matches you with 
             <span className="font-semibold text-black"> college-educated, dedicated assistants </span> 
-            who work in your time zone—for a fraction of the cost of a US hire.
+            who work in your time zone for a fraction of the cost of a US hire.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row animate-[drop-in_1000ms_cubic-bezier(0.2,0.8,0.2,1)_1.2s_both] opacity-0">
             <button
-              className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition-all hover:bg-black/90 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+              className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border border-black bg-transparent px-10 py-4 text-sm font-medium text-black transition-all hover:bg-black hover:text-white focus:outline-none"
               style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}
             >
-              <span className="mr-2">Find your assistant</span>
+              <span className="mr-2">Get Started</span>
               <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </button>
-            <button
-              className="group inline-flex items-center justify-center rounded-full border border-black/10 bg-white px-8 py-4 text-sm font-medium text-black transition-all hover:bg-gray-50 hover:border-black/20"
-              style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}
-            >
-              View our candidates
-            </button>
-          </div>
-          
-          <div className="mt-12 flex items-center gap-4 text-sm text-black/60 animate-[drop-in_1000ms_cubic-bezier(0.2,0.8,0.2,1)_1.4s_both] opacity-0">
-            <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="h-8 w-8 rounded-full border-2 border-white bg-gray-200 bg-[url('/demo-poster.jpg')] bg-cover bg-center" />
-              ))}
-            </div>
-            <p>Trusted by 500+ founders</p>
           </div>
         </div>
 
@@ -81,22 +67,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* Floating Badge 3 */}
+            <div className="absolute top-0 right-0 animate-[drop-in_1000ms_cubic-bezier(0.2,0.8,0.2,1)_2.0s_both] opacity-0">
+              <div className="flex items-center gap-3 rounded-xl border border-black/5 bg-white/90 p-4 shadow-xl backdrop-blur-sm">
+                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-100 text-purple-600">
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-black">$127k Saved</p>
+                  <p className="text-xs text-black/50">Avg. annual savings</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Trusted By Section */}
-      <section className="border-y border-black/5 py-12 mt-12">
-        <div className="text-center">
-          <p className="mb-8 text-sm font-medium uppercase tracking-widest text-black/40">Trusted by high-growth companies</p>
-          <div className="flex flex-wrap justify-center gap-12 opacity-60 grayscale transition-all duration-500 hover:grayscale-0 hover:opacity-100">
-            {/* Placeholders for logos - using text for now or generic SVGs if available, assuming text is safer unless I have logos */}
-            {['TechStart', 'GrowthFund', 'ScaleUp Inc', 'VentureFlow', 'Apex Capital'].map((name) => (
-              <span key={name} className="text-xl font-semibold text-black/40">{name}</span>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Logo Marquee (Trusted By) */}
+      <LogoMarquee />
 
       {/* Problem / Solution Grid */}
       <section className="mt-32">
@@ -159,7 +147,7 @@ export default function Home() {
               "Travel Booking", "Customer Support", "Lead Generation", "Market Research",
               "CRM Management", "Invoicing", "Project Management", "Content Creation"
             ].map((task) => (
-              <div key={task} className="rounded-xl bg-white p-4 text-sm font-medium text-black shadow-sm ring-1 ring-black/5">
+              <div key={task} className="rounded-xl bg-white p-4 text-sm font-medium text-black shadow-sm ring-1 ring-black/5" style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
                 {task}
               </div>
             ))}

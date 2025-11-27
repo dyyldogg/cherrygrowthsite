@@ -25,7 +25,7 @@ export default function CaseStudy() {
               </h3>
             </div>
             <p className="ml-11 text-lg text-black/70 leading-relaxed">
-              Sarah, a marketing agency founder, was drowning in email and admin. She spent <span className="font-medium text-black">15 hours a week</span> on scheduling and invoicing, preventing her from closing new deals.
+              Dr. Farzam's law firm was struggling with intake, client follow-ups, backend processes, and customer support. His paralegals were overwhelmed, and potential cases were slipping through the cracks.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function CaseStudy() {
               </h3>
             </div>
             <p className="ml-11 text-lg text-black/70 leading-relaxed">
-              We matched Sarah with Maria, an experienced Executive Assistant. Maria took over inbox management and billing immediately. Sarah reclaimed her time and <span className="font-medium text-black">doubled her revenue</span> in 6 months.
+              By hiring 3 dedicated VAs, he completely transformed his business. They took over all intake and support tasks, streamlining operations at only 5% of the price of a paralegal.
             </p>
           </div>
           
@@ -50,26 +50,29 @@ export default function CaseStudy() {
         </div>
 
         {/* Right Stats Card */}
-        <div className="relative overflow-hidden rounded-3xl bg-white border border-black/10 p-8 sm:p-12 shadow-xl">
+        <div className="relative overflow-hidden rounded-3xl bg-white border border-black/10 p-8 sm:p-12 shadow-xl" style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
           {/* Background decoration */}
           <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-50 blur-3xl" />
           
           <div className="relative z-10">
              <div className="flex items-center gap-4 mb-8">
-                <div className="h-12 w-12 rounded-full bg-gray-200 bg-[url('/demo-poster.jpg')] bg-cover bg-center"></div>
+                {/* Photo removed as requested */}
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-black text-white font-bold text-xl">
+                  DF
+                </div>
                 <div>
-                  <div className="font-medium text-black">Sarah Jenkins</div>
-                  <div className="text-sm text-black/50">Founder, GrowthMedia</div>
+                  <div className="font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>Dr. Farzam</div>
+                  <div className="text-sm text-black/50">Farzam Law Firm</div>
                 </div>
              </div>
           
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <div className="text-5xl font-medium text-black">15h</div>
+                <div className="text-5xl font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>120h</div>
                 <div className="mt-2 text-sm font-medium text-black/50 uppercase tracking-wide">Saved Weekly</div>
               </div>
               <div>
-                <div className="text-5xl font-medium text-black">200%</div>
+                <div className="text-5xl font-medium text-black" style={{ fontFamily: "var(--font-playfair)" }}>200%</div>
                 <div className="mt-2 text-sm font-medium text-black/50 uppercase tracking-wide">Revenue Growth</div>
               </div>
             </div>
@@ -81,7 +84,7 @@ export default function CaseStudy() {
               </div>
                <div className="mt-3 flex items-center justify-between">
                 <span className="text-sm text-black/60">Cost reduction</span>
-                <span className="font-medium text-green-600">-75% vs US Hire</span>
+                <span className="font-medium text-green-600">-95% vs Paralegal</span>
               </div>
             </div>
           </div>

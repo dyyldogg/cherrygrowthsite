@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "CherryGrowth — Elite Virtual Assistants for High-Growth Businesses",
+  title: "CherryGrowth | Elite Virtual Assistants for High-Growth Businesses",
   description:
     "CherryGrowth matches you with top 1% college-educated virtual assistants. Save time and scale your business for a fraction of the cost of US hiring.",
 };
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} antialiased font-serif`}>
+      <body className={`${inter.variable} ${playfair.variable} antialiased font-sans`}>
         <Navbar />
         {children}
       </body>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 function formatCurrency(value: number): string {
   if (!isFinite(value)) return "$0";
@@ -9,29 +9,35 @@ function formatCurrency(value: number): string {
 
 export default function RoiCalculator() {
   // Inputs
-  const [rolesToHire, setRolesToHire] = useState<number>(1);
-  const [avgUsSalary, setAvgUsSalary] = useState<number>(60000);
+  const [rolesToHire, setRolesToHire] = useState<number>(4);
+  const [avgUsSalary, setAvgUsSalary] = useState<number>(80000);
   
   // Constants
   const US_OVERHEAD_MULTIPLIER = 1.25; // Taxes, benefits, equipment, office
-  const CHERRYGROWTH_ANNUAL_COST = 19200; // $1600/mo * 12
+  const CHERRYGROWTH_MONTHLY_COST = 1600;
+
+  // Scroll to calculator on mount if it's the intended target (optional, but "auto open" usually implies initial state)
+  // If the user meant "scroll to this section", we can add an ID. 
+  // If they meant "default values", I've updated the useState above.
 
   const results = useMemo(() => {
-    const usTotalCost = rolesToHire * avgUsSalary * US_OVERHEAD_MULTIPLIER;
-    const cherryGrowthTotalCost = rolesToHire * CHERRYGROWTH_ANNUAL_COST;
-    const annualSavings = usTotalCost - cherryGrowthTotalCost;
-    const savingsPercent = (annualSavings / usTotalCost) * 100;
+    const usMonthlyCost = (rolesToHire * avgUsSalary * US_OVERHEAD_MULTIPLIER) / 12;
+    const cherryGrowthMonthlyCost = rolesToHire * CHERRYGROWTH_MONTHLY_COST;
+    const monthlySavings = usMonthlyCost - cherryGrowthMonthlyCost;
+    const annualSavings = monthlySavings * 12;
+    const savingsPercent = (monthlySavings / usMonthlyCost) * 100;
 
     return {
-      usTotalCost,
-      cherryGrowthTotalCost,
+      usMonthlyCost,
+      cherryGrowthMonthlyCost,
+      monthlySavings,
       annualSavings,
       savingsPercent
     };
   }, [rolesToHire, avgUsSalary]);
 
   return (
-    <section className="mx-auto mt-24 w-full max-w-6xl px-4" style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
+    <section id="calculator" className="mx-auto mt-24 w-full max-w-6xl px-4" style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
 
         {/* Left Column: Inputs */}
@@ -94,33 +100,33 @@ export default function RoiCalculator() {
 
         {/* Right Column: Results */}
         <div className="flex items-center">
-          <div className="relative w-full overflow-hidden rounded-2xl bg-[#111] p-8 text-white shadow-2xl sm:p-12">
+          <div className="relative w-full overflow-hidden rounded-3xl border-[12px] border-[#111] bg-white p-8 text-black shadow-2xl sm:p-12">
             <div className="mb-8 flex items-center gap-3 opacity-60">
-              <div className="h-px flex-1 bg-white/20"></div>
-              <span className="text-xs font-medium uppercase tracking-wider">Annual Savings</span>
+              <div className="h-px flex-1 bg-black/20"></div>
+              <span className="text-xs font-medium uppercase tracking-wider text-black/70">Annual Savings</span>
             </div>
 
             <div className="space-y-2 text-center">
-              <p className="text-6xl font-normal text-white sm:text-7xl" style={{ fontFamily: "var(--font-playfair)" }}>
+              <p className="text-6xl font-normal text-black sm:text-7xl" style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
                 {formatCurrency(results.annualSavings)}
               </p>
-              <p className="text-lg text-white/70">saved per year</p>
+              <p className="text-lg text-black/70">saved per year</p>
             </div>
 
-            <div className="mt-10 grid grid-cols-2 gap-6 border-t border-white/10 pt-8">
+            <div className="mt-10 grid grid-cols-2 gap-6 border-t border-black/10 pt-8">
               <div>
-                <div className="text-white/50 text-sm uppercase tracking-wide mb-1">US Cost</div>
-                <div className="text-xl font-medium">{formatCurrency(results.usTotalCost)}</div>
+                <div className="text-black/50 text-sm uppercase tracking-wide mb-1">US Cost (mo)</div>
+                <div className="text-xl font-medium">{formatCurrency(results.usMonthlyCost)}</div>
               </div>
               <div>
-                <div className="text-white/50 text-sm uppercase tracking-wide mb-1">CherryGrowth Cost</div>
-                <div className="text-xl font-medium text-green-400">{formatCurrency(results.cherryGrowthTotalCost)}</div>
+                <div className="text-black/50 text-sm uppercase tracking-wide mb-1">CherryGrowth (mo)</div>
+                <div className="text-xl font-medium text-green-600">{formatCurrency(results.cherryGrowthMonthlyCost)}</div>
               </div>
             </div>
 
             <button
               type="button"
-              className="mt-10 w-full rounded-full bg-white py-4 text-sm font-medium text-black transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              className="mt-10 w-full rounded-full bg-black py-4 text-sm font-medium text-white transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               Start saving today
             </button>
