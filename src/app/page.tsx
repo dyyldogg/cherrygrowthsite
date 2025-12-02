@@ -6,6 +6,7 @@ import Values from "@/components/Values";
 import FooterCta from "@/components/FooterCta";
 import Footer from "@/components/Footer";
 import LogoMarquee from "@/components/LogoMarquee";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -85,6 +86,9 @@ export default function Home() {
 
       {/* Logo Marquee (Trusted By) */}
       <LogoMarquee />
+
+      {/* Testimonials Animation */}
+      <Testimonials />
 
       {/* Problem / Solution Grid */}
       <section className="mt-32">

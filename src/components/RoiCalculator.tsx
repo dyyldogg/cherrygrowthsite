@@ -16,10 +16,6 @@ export default function RoiCalculator() {
   const US_OVERHEAD_MULTIPLIER = 1.25; // Taxes, benefits, equipment, office
   const CHERRYGROWTH_MONTHLY_COST = 1600;
 
-  // Scroll to calculator on mount if it's the intended target (optional, but "auto open" usually implies initial state)
-  // If the user meant "scroll to this section", we can add an ID. 
-  // If they meant "default values", I've updated the useState above.
-
   const results = useMemo(() => {
     const usMonthlyCost = (rolesToHire * avgUsSalary * US_OVERHEAD_MULTIPLIER) / 12;
     const cherryGrowthMonthlyCost = rolesToHire * CHERRYGROWTH_MONTHLY_COST;
@@ -100,7 +96,7 @@ export default function RoiCalculator() {
 
         {/* Right Column: Results */}
         <div className="flex items-center">
-          <div className="relative w-full overflow-hidden rounded-3xl border-[12px] border-[#111] bg-white p-8 text-black shadow-2xl sm:p-12">
+          <div className="relative w-full overflow-hidden rounded-3xl border-[8px] border-[#111] bg-[#fcfcfc] p-8 text-black shadow-2xl sm:p-12">
             <div className="mb-8 flex items-center gap-3 opacity-60">
               <div className="h-px flex-1 bg-black/20"></div>
               <span className="text-xs font-medium uppercase tracking-wider text-black/70">Annual Savings</span>
