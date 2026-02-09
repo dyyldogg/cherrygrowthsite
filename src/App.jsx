@@ -63,8 +63,8 @@ function Footer() {
             <div className="text-sm font-semibold text-gray-900 mb-3">Contact</div>
             <div className="space-y-2 text-sm text-gray-600">
               <div>1940 Haste St, Berkeley, CA 94704 #B</div>
-              <div>hello@cherrygrowth.com</div>
-              <div>(707) 732-4152</div>
+              <div>admin@cherrygrowth.com</div>
+              <div>(310) 907-5746</div>
             </div>
           </div>
         </div>
@@ -721,7 +721,7 @@ function Privacy() {
           <li><strong>Message Types:</strong> Transactional service notifications only (non-promotional)</li>
           <li><strong>Frequency:</strong> Message frequency varies based on service activity</li>
           <li><strong>Opt-Out:</strong> Reply STOP to any message to immediately unsubscribe</li>
-          <li><strong>Help:</strong> Reply HELP for assistance or contact hello@cherrygrowth.com</li>
+          <li><strong>Help:</strong> Reply HELP for assistance or contact admin@cherrygrowth.com</li>
           <li><strong>Records:</strong> We store opt-in timestamps, consent records, and complete audit trails</li>
         </ul>
 
@@ -736,7 +736,7 @@ function Privacy() {
         <p className="text-gray-700 leading-relaxed">
           We retain information for as long as needed to provide services and as required by law. Message logs, 
           consent records, and audit trails are retained for compliance purposes. You may request deletion of 
-          your data by contacting us at hello@cherrygrowth.com.
+          your data by contacting us at admin@cherrygrowth.com.
         </p>
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Your Rights and Choices</h2>
@@ -775,8 +775,8 @@ function Privacy() {
         <div className="text-gray-700 leading-relaxed">
           <p>Cherrygrowth, LLC</p>
           <p>1940 Haste St, Berkeley, CA 94704 Apartment #B</p>
-          <p>Email: hello@cherrygrowth.com</p>
-          <p>Phone: (707) 732-4152</p>
+          <p>Email: admin@cherrygrowth.com</p>
+          <p>Phone: (310) 907-5746</p>
         </div>
       </div>
     </div>
@@ -812,7 +812,7 @@ function Terms() {
             <li><strong>Frequency:</strong> Recurring; message frequency varies based on service activity</li>
             <li><strong>Cost:</strong> Message and data rates may apply as charged by your mobile carrier</li>
             <li><strong>Opt-Out:</strong> Reply STOP to any message to cancel at any time</li>
-            <li><strong>Help:</strong> Reply HELP for assistance or contact hello@cherrygrowth.com or (707) 732-4152</li>
+            <li><strong>Help:</strong> Reply HELP for assistance or contact admin@cherrygrowth.com or (310) 907-5746</li>
           </ul>
         </div>
 
@@ -882,8 +882,8 @@ function Terms() {
         <div className="text-gray-700 leading-relaxed">
           <p>Cherrygrowth, LLC</p>
           <p>1940 Haste St, Berkeley, CA 94704 Apartment #B</p>
-          <p>Email: hello@cherrygrowth.com</p>
-          <p>Phone: (707) 732-4152</p>
+          <p>Email: admin@cherrygrowth.com</p>
+          <p>Phone: (310) 907-5746</p>
         </div>
 
         <p className="text-gray-700 leading-relaxed mt-8">
