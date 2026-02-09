@@ -5,7 +5,7 @@ function Header() {
     <header className="border-b border-gray-100 bg-white/80 backdrop-blur-xl sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-          TouchPointPlus
+          Cherrygrowth
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
           <Link to="/platform" className="hover:text-purple-600 transition-colors">Platform</Link>
@@ -37,7 +37,7 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="text-lg font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-3">
-              TouchPointPlus
+              Cherrygrowth
             </div>
             <p className="text-sm text-gray-600 leading-relaxed">
               Client management and engagement platform for real estate teams.
@@ -63,14 +63,14 @@ function Footer() {
             <div className="text-sm font-semibold text-gray-900 mb-3">Contact</div>
             <div className="space-y-2 text-sm text-gray-600">
               <div>1940 Haste St, Berkeley, CA 94704 #B</div>
-              <div>hello@touchpoint.plus</div>
-              <div>(310) 907-5746</div>
+              <div>hello@cherrygrowth.com</div>
+              <div>(707) 732-4152</div>
             </div>
           </div>
         </div>
         <div className="pt-8 border-t border-gray-200 text-sm text-gray-600">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div>© {new Date().getFullYear()} TouchPointPlus, LLC. All rights reserved.</div>
+            <div>© {new Date().getFullYear()} Cherrygrowth, LLC. All rights reserved.</div>
             <div className="text-xs text-gray-500">
               Built for compliance and reliability
             </div>
@@ -148,7 +148,7 @@ function Home() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Engagement Analytics</h3>
             <p className="text-gray-600 leading-relaxed">
-              Track every touchpoint with detailed analytics. See response rates, communication patterns, and identify your most engaged clients at a glance.
+              Track every interaction with detailed analytics. See response rates, communication patterns, and identify your most engaged clients at a glance.
             </p>
           </div>
           <div className="p-8 bg-white rounded-2xl border border-gray-100 hover:border-purple-200 hover:shadow-xl transition-all duration-300">
@@ -204,7 +204,7 @@ function Home() {
               Keep Clients in the Loop
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              TouchPointPlus automatically sends the messages your clients need—appointment confirmations, 
+              Cherrygrowth automatically sends the messages your clients need—appointment confirmations, 
               service updates, and important notices. Set it up once, and your communication runs on autopilot.
             </p>
             <div className="space-y-6">
@@ -300,7 +300,7 @@ function Platform() {
           The Platform
         </h1>
         <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-          TouchPointPlus is your command center for client relationships. Track every interaction, 
+          Cherrygrowth is your command center for client relationships. Track every interaction, 
           analyze engagement patterns, and automate communication—all from one unified dashboard.
         </p>
       </div>
@@ -400,7 +400,7 @@ function Communications() {
         How We Communicate
       </h1>
       <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-        TouchPointPlus provides compliant, service-oriented communications for real estate teams. 
+        Cherrygrowth provides compliant, service-oriented communications for real estate teams. 
         Every message is transactional, consent-based, and fully auditable.
       </p>
 
@@ -443,7 +443,7 @@ function Communications() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Opt-In Process</h2>
           <p className="text-gray-700 mb-6">
             Clients explicitly opt in via our web signup form with clear consent language, or by providing 
-            their phone number directly to a TouchPointPlus representative. We store opt-in timestamps and 
+            their phone number directly to a Cherrygrowth representative. We store opt-in timestamps and 
             maintain comprehensive audit logs for each phone number.
           </p>
           <div className="bg-white rounded-lg p-6 border border-blue-200">
@@ -463,7 +463,7 @@ function Communications() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Compliance Standards</h2>
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-700 leading-relaxed">
-              TouchPointPlus maintains full TCPA compliance for all SMS communications. Our platform includes:
+              Cherrygrowth maintains full TCPA compliance for all SMS communications. Our platform includes:
             </p>
             <ul className="space-y-2 text-gray-700">
               <li>Written consent before any messages are sent</li>
@@ -615,7 +615,7 @@ function Signup() {
                 <input id="sms-consent" type="checkbox" name="smsConsent" className="mt-1 w-5 h-5 text-purple-600 border-gray-300 rounded focus:ring-purple-500" required />
                 <div className="text-sm text-gray-700">
                   <label htmlFor="sms-consent" className="cursor-pointer font-medium">
-                    I consent to receive transactional service messages from TouchPointPlus at the phone number provided above.
+                    I consent to receive transactional service messages from Cherrygrowth at the phone number provided above.
                   </label>
                   <p className="mt-2 text-gray-600">
                     This includes appointment reminders, service updates, and billing confirmations. Message frequency varies. 
@@ -688,7 +688,7 @@ function Privacy() {
         <p className="text-gray-600 mb-8">Last updated: ${new Date().toLocaleDateString()}</p>
         
         <p className="text-gray-700 leading-relaxed mb-6">
-          TouchPointPlus, LLC ("TouchPointPlus", "we", "us") provides AI-powered client communication services 
+          Cherrygrowth, LLC ("Cherrygrowth", "we", "us") provides AI-powered client communication services 
           for real estate professionals. This policy explains how we collect, use, and share information.
         </p>
 
@@ -721,7 +721,7 @@ function Privacy() {
           <li><strong>Message Types:</strong> Transactional service notifications only (non-promotional)</li>
           <li><strong>Frequency:</strong> Message frequency varies based on service activity</li>
           <li><strong>Opt-Out:</strong> Reply STOP to any message to immediately unsubscribe</li>
-          <li><strong>Help:</strong> Reply HELP for assistance or contact hello@touchpoint.plus</li>
+          <li><strong>Help:</strong> Reply HELP for assistance or contact hello@cherrygrowth.com</li>
           <li><strong>Records:</strong> We store opt-in timestamps, consent records, and complete audit trails</li>
         </ul>
 
@@ -736,7 +736,7 @@ function Privacy() {
         <p className="text-gray-700 leading-relaxed">
           We retain information for as long as needed to provide services and as required by law. Message logs, 
           consent records, and audit trails are retained for compliance purposes. You may request deletion of 
-          your data by contacting us at hello@touchpoint.plus.
+          your data by contacting us at hello@cherrygrowth.com.
         </p>
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Your Rights and Choices</h2>
@@ -773,10 +773,10 @@ function Privacy() {
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Contact Us</h2>
         <div className="text-gray-700 leading-relaxed">
-          <p>TouchPointPlus, LLC</p>
+          <p>Cherrygrowth, LLC</p>
           <p>1940 Haste St, Berkeley, CA 94704 Apartment #B</p>
-          <p>Email: hello@touchpoint.plus</p>
-          <p>Phone: (310) 907-5746</p>
+          <p>Email: hello@cherrygrowth.com</p>
+          <p>Phone: (707) 732-4152</p>
         </div>
       </div>
     </div>
@@ -791,12 +791,12 @@ function Terms() {
         <p className="text-gray-600 mb-8">Last updated: ${new Date().toLocaleDateString()}</p>
         
         <p className="text-gray-700 leading-relaxed mb-6">
-          By using TouchPointPlus services, you agree to these Terms of Service.
+          By using Cherrygrowth services, you agree to these Terms of Service.
         </p>
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Services</h2>
         <p className="text-gray-700 leading-relaxed">
-          TouchPointPlus provides AI-powered client communication services for real estate professionals, 
+          Cherrygrowth provides AI-powered client communication services for real estate professionals, 
           including appointment reminders, service status updates, billing confirmations, and account notifications.
         </p>
 
@@ -804,15 +804,15 @@ function Terms() {
         <div className="bg-blue-50 rounded-xl p-6 border border-blue-200 my-6">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Program Information</h3>
           <ul className="space-y-3 text-gray-700">
-            <li><strong>Program Name:</strong> TouchPointPlus Client Communications</li>
+            <li><strong>Program Name:</strong> Cherrygrowth Client Communications</li>
             <li><strong>Description:</strong> We send transactional service messages including appointment reminders, 
             service updates, billing confirmations, and account notifications (non-promotional)</li>
             <li><strong>Opt-In:</strong> Subscribe via our web forms, client portal, or by providing explicit consent 
-            to a TouchPointPlus representative</li>
+            to a Cherrygrowth representative</li>
             <li><strong>Frequency:</strong> Recurring; message frequency varies based on service activity</li>
             <li><strong>Cost:</strong> Message and data rates may apply as charged by your mobile carrier</li>
             <li><strong>Opt-Out:</strong> Reply STOP to any message to cancel at any time</li>
-            <li><strong>Help:</strong> Reply HELP for assistance or contact hello@touchpoint.plus or (310) 907-5746</li>
+            <li><strong>Help:</strong> Reply HELP for assistance or contact hello@cherrygrowth.com or (707) 732-4152</li>
           </ul>
         </div>
 
@@ -857,7 +857,7 @@ function Terms() {
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Limitation of Liability</h2>
         <p className="text-gray-700 leading-relaxed">
-          TouchPointPlus shall not be liable for indirect, incidental, special, consequential, or punitive 
+          Cherrygrowth shall not be liable for indirect, incidental, special, consequential, or punitive 
           damages arising from your use of our services.
         </p>
 
@@ -880,10 +880,10 @@ function Terms() {
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Contact</h2>
         <div className="text-gray-700 leading-relaxed">
-          <p>TouchPointPlus, LLC</p>
+          <p>Cherrygrowth, LLC</p>
           <p>1940 Haste St, Berkeley, CA 94704 Apartment #B</p>
-          <p>Email: hello@touchpoint.plus</p>
-          <p>Phone: (310) 907-5746</p>
+          <p>Email: hello@cherrygrowth.com</p>
+          <p>Phone: (707) 732-4152</p>
         </div>
 
         <p className="text-gray-700 leading-relaxed mt-8">
