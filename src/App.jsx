@@ -615,7 +615,7 @@ function Signup() {
                 <input id="sms-consent" type="checkbox" name="smsConsent" className="mt-1 w-5 h-5 text-purple-600 border-gray-300 rounded focus:ring-purple-500" required />
                 <div className="text-sm text-gray-700">
                   <label htmlFor="sms-consent" className="cursor-pointer">
-                    I consent to receive transactional service messages from CherryGrowth at the phone number provided above. This includes appointment reminders, service updates, and billing confirmations. Message frequency varies. Message and data rates may apply. <strong>Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. <strong>Reply HELP</strong> for assistance. See our{' '}
+                    I consent to receive transactional service messages from CherryGrowth at the phone number provided above. This includes appointment reminders, service updates, and billing confirmations. <strong>Consent is not a condition of purchase.</strong> Message frequency varies. Message and data rates may apply. <strong>Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. <strong>Reply HELP</strong> for assistance. See our{' '}
                     <Link to="/privacy" className="text-purple-600 hover:underline font-medium">Privacy Policy</Link> and{' '}
                     <Link to="/terms" className="text-purple-600 hover:underline font-medium">Terms of Service</Link>.
                   </label>
