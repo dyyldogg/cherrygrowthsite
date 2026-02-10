@@ -614,15 +614,11 @@ function Signup() {
               <div className="flex items-start gap-4">
                 <input id="sms-consent" type="checkbox" name="smsConsent" className="mt-1 w-5 h-5 text-purple-600 border-gray-300 rounded focus:ring-purple-500" required />
                 <div className="text-sm text-gray-700">
-                  <label htmlFor="sms-consent" className="cursor-pointer font-medium">
-                    I consent to receive transactional service messages from Cherrygrowth at the phone number provided above.
-                  </label>
-                  <p className="mt-2 text-gray-600">
-                    This includes appointment reminders, service updates, and billing confirmations. Message frequency varies. 
-                    Message and data rates may apply. <strong>Reply STOP to opt out at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. For help, <strong>reply HELP</strong>. See our{' '}
+                  <label htmlFor="sms-consent" className="cursor-pointer">
+                    I consent to receive transactional service messages from CherryGrowth at the phone number provided above. This includes appointment reminders, service updates, and billing confirmations. Message frequency varies. Message and data rates may apply. <strong>Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. <strong>Reply HELP</strong> for assistance. See our{' '}
                     <Link to="/privacy" className="text-purple-600 hover:underline font-medium">Privacy Policy</Link> and{' '}
                     <Link to="/terms" className="text-purple-600 hover:underline font-medium">Terms of Service</Link>.
-                  </p>
+                  </label>
                 </div>
               </div>
             </div>
@@ -720,7 +716,7 @@ function Privacy() {
           <li><strong>Consent:</strong> We obtain explicit written consent before sending any SMS messages</li>
           <li><strong>Message Types:</strong> Transactional service notifications only (non-promotional)</li>
           <li><strong>Frequency:</strong> Message frequency varies based on service activity</li>
-          <li><strong>Opt-Out: Reply STOP to any message to immediately unsubscribe.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.</li>
+          <li><strong>Opt-Out: Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed.</li>
           <li><strong>Help: Reply HELP</strong> for assistance or contact admin@cherrygrowth.com</li>
           <li><strong>Records:</strong> We store opt-in timestamps, consent records, and complete audit trails</li>
         </ul>
@@ -741,7 +737,7 @@ function Privacy() {
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Your Rights and Choices</h2>
         <ul className="space-y-2 text-gray-700">
-          <li><strong>Opt-Out: Reply STOP to any SMS message or contact us to opt out.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.</li>
+          <li><strong>Opt-Out: Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed.</li>
           <li><strong>Access:</strong> Request access to your personal data through the client portal</li>
           <li><strong>Correction:</strong> Update your information in the client portal or contact support</li>
           <li><strong>Deletion:</strong> Request deletion of your data (subject to legal retention requirements)</li>
@@ -811,7 +807,7 @@ function Terms() {
             to a Cherrygrowth representative</li>
             <li><strong>Frequency:</strong> Recurring; message frequency varies based on service activity</li>
             <li><strong>Cost:</strong> Message and data rates may apply as charged by your mobile carrier</li>
-            <li><strong>Opt-Out: Reply STOP to any message to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.</li>
+            <li><strong>Opt-Out: Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed.</li>
             <li><strong>Help: Reply HELP</strong> for assistance or contact admin@cherrygrowth.com or (310) 907-5746</li>
           </ul>
         </div>
