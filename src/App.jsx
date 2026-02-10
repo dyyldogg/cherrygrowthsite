@@ -443,7 +443,7 @@ function Communications() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Opt-In Process</h2>
           <p className="text-gray-700 mb-6">
             Clients explicitly opt in via our web signup form with clear consent language, or by providing 
-            their phone number directly to a Cherrygrowth representative. We store opt-in timestamps and 
+            their phone number directly to a Cherrygrowth representative. <strong>Consent is not a condition of purchase.</strong> We store opt-in timestamps and 
             maintain comprehensive audit logs for each phone number.
           </p>
           <div className="bg-white rounded-lg p-6 border border-blue-200">
@@ -713,7 +713,7 @@ function Privacy() {
           service status updates, and billing confirmations. Key details:
         </p>
         <ul className="space-y-2 text-gray-700">
-          <li><strong>Consent:</strong> We obtain explicit written consent before sending any SMS messages</li>
+          <li><strong>Consent:</strong> We obtain explicit written consent before sending any SMS messages. <strong>Consent is not a condition of purchase.</strong></li>
           <li><strong>Message Types:</strong> Transactional service notifications only (non-promotional)</li>
           <li><strong>Frequency:</strong> Message frequency varies based on service activity</li>
           <li><strong>Opt-Out: Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed.</li>
@@ -804,7 +804,7 @@ function Terms() {
             <li><strong>Description:</strong> We send transactional service messages including appointment reminders, 
             service updates, billing confirmations, and account notifications (non-promotional)</li>
             <li><strong>Opt-In:</strong> Subscribe via our web forms, client portal, or by providing explicit consent 
-            to a Cherrygrowth representative</li>
+            to a Cherrygrowth representative. <strong>Consent is not a condition of purchase.</strong></li>
             <li><strong>Frequency:</strong> Recurring; message frequency varies based on service activity</li>
             <li><strong>Cost:</strong> Message and data rates may apply as charged by your mobile carrier</li>
             <li><strong>Opt-Out: Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed.</li>
