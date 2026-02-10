@@ -468,7 +468,7 @@ function Communications() {
             <ul className="space-y-2 text-gray-700">
               <li>Written consent before any messages are sent</li>
               <li>Clear identification of sender in every message</li>
-              <li>Easy opt-out mechanism (reply STOP)</li>
+              <li>Easy opt-out mechanism (<strong>reply STOP</strong>)</li>
               <li>Comprehensive message and consent logging</li>
               <li>Regular compliance audits and reviews</li>
               <li>Data retention policies aligned with regulatory requirements</li>
@@ -619,7 +619,7 @@ function Signup() {
                   </label>
                   <p className="mt-2 text-gray-600">
                     This includes appointment reminders, service updates, and billing confirmations. Message frequency varies. 
-                    Message and data rates may apply. Reply STOP to opt out at any time. For help, reply HELP. See our{' '}
+                    Message and data rates may apply. <strong>Reply STOP to opt out at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. For help, <strong>reply HELP</strong>. See our{' '}
                     <Link to="/privacy" className="text-purple-600 hover:underline font-medium">Privacy Policy</Link> and{' '}
                     <Link to="/terms" className="text-purple-600 hover:underline font-medium">Terms of Service</Link>.
                   </p>
@@ -720,8 +720,8 @@ function Privacy() {
           <li><strong>Consent:</strong> We obtain explicit written consent before sending any SMS messages</li>
           <li><strong>Message Types:</strong> Transactional service notifications only (non-promotional)</li>
           <li><strong>Frequency:</strong> Message frequency varies based on service activity</li>
-          <li><strong>Opt-Out:</strong> Reply STOP to any message to immediately unsubscribe</li>
-          <li><strong>Help:</strong> Reply HELP for assistance or contact admin@cherrygrowth.com</li>
+          <li><strong>Opt-Out: Reply STOP to any message to immediately unsubscribe.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.</li>
+          <li><strong>Help: Reply HELP</strong> for assistance or contact admin@cherrygrowth.com</li>
           <li><strong>Records:</strong> We store opt-in timestamps, consent records, and complete audit trails</li>
         </ul>
 
@@ -741,7 +741,7 @@ function Privacy() {
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Your Rights and Choices</h2>
         <ul className="space-y-2 text-gray-700">
-          <li><strong>Opt-Out:</strong> Reply STOP to any SMS message or contact us to opt out</li>
+          <li><strong>Opt-Out: Reply STOP to any SMS message or contact us to opt out.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.</li>
           <li><strong>Access:</strong> Request access to your personal data through the client portal</li>
           <li><strong>Correction:</strong> Update your information in the client portal or contact support</li>
           <li><strong>Deletion:</strong> Request deletion of your data (subject to legal retention requirements)</li>
@@ -811,8 +811,8 @@ function Terms() {
             to a Cherrygrowth representative</li>
             <li><strong>Frequency:</strong> Recurring; message frequency varies based on service activity</li>
             <li><strong>Cost:</strong> Message and data rates may apply as charged by your mobile carrier</li>
-            <li><strong>Opt-Out:</strong> Reply STOP to any message to cancel at any time</li>
-            <li><strong>Help:</strong> Reply HELP for assistance or contact admin@cherrygrowth.com or (310) 907-5746</li>
+            <li><strong>Opt-Out: Reply STOP to any message to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.</li>
+            <li><strong>Help: Reply HELP</strong> for assistance or contact admin@cherrygrowth.com or (310) 907-5746</li>
           </ul>
         </div>
 
