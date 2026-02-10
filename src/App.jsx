@@ -619,7 +619,7 @@ function Signup() {
                   </label>
                   <p className="mt-2 text-gray-600">
                     This includes appointment reminders, service updates, and billing confirmations. Message frequency varies. 
-                    Message and data rates may apply. Reply STOP to opt out at any time. See our{' '}
+                    Message and data rates may apply. Reply STOP to opt out at any time. For help, reply HELP. See our{' '}
                     <Link to="/privacy" className="text-purple-600 hover:underline font-medium">Privacy Policy</Link> and{' '}
                     <Link to="/terms" className="text-purple-600 hover:underline font-medium">Terms of Service</Link>.
                   </p>
@@ -729,7 +729,7 @@ function Privacy() {
         <p className="text-gray-700 leading-relaxed">
           We share necessary data with trusted service providers (e.g., SMS platforms, wireless carriers, 
           and Google Cloud Platform) solely to deliver messages and operate our services. We do not sell 
-          personal data to third parties.
+          personal data to third parties. We do not share or sell mobile phone numbers to third parties for marketing purposes.
         </p>
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Data Retention</h2>
@@ -835,6 +835,7 @@ function Terms() {
           <li>We share necessary data with messaging vendors and wireless carriers to deliver messages</li>
           <li>We maintain audit logs of all messages sent and delivery status</li>
           <li>You may withdraw consent at any time by replying STOP or contacting us</li>
+          <li>We do not share or sell mobile phone numbers to third parties for marketing purposes</li>
         </ul>
 
         <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Carrier Information</h2>
