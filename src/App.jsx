@@ -613,7 +613,7 @@ function Signup() {
             <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
               <div className="text-sm font-semibold text-gray-900 mb-4">Would you like to receive SMS notifications?</div>
               <div className="space-y-3 mb-4">
-                <label className="flex items-center gap-3 p-3 rounded-lg border-2 border-purple-500 bg-purple-50 cursor-pointer">
+                <label className="flex items-center gap-3 p-3 rounded-lg border-2 border-gray-200 cursor-pointer hover:border-gray-300 transition-colors">
                   <input type="radio" name="smsConsent" value="yes" className="w-5 h-5 text-purple-600 border-gray-300 focus:ring-purple-500" required />
                   <span className="text-sm font-medium text-gray-900">Yes, sign me up for SMS</span>
                 </label>
