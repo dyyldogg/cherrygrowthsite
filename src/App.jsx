@@ -247,13 +247,13 @@ function Home() {
             <div className="text-sm font-semibold text-purple-900 mb-4">Sample Messages</div>
             <div className="space-y-4">
               <div className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm">
-                <div className="text-sm text-gray-900">"Hello Sarah, this is a reminder of your appointment with Agent John on Jan 15 at 2:00 PM."</div>
+                <div className="text-sm text-gray-900">"Hello Sarah, this is a reminder of your appointment with Agent John on Jan 15 at 2:00 PM. Reply STOP to opt out."</div>
               </div>
               <div className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm">
-                <div className="text-sm text-gray-900">"Your service request has been received. Our team will notify you once it is completed."</div>
+                <div className="text-sm text-gray-900">"Your service request has been received. Our team will notify you once it is completed. Reply STOP to opt out."</div>
               </div>
               <div className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm">
-                <div className="text-sm text-gray-900">"Confirmation: Invoice #12345 has been processed and is now available in your portal."</div>
+                <div className="text-sm text-gray-900">"Confirmation: Invoice #12345 has been processed and is now available in your portal. Reply STOP to opt out."</div>
               </div>
             </div>
             <div className="mt-6 text-xs text-gray-600">
@@ -415,25 +415,25 @@ function Communications() {
             <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
               <div className="text-sm font-semibold text-gray-900 mb-2">Appointment Reminders</div>
               <div className="text-sm text-gray-700 font-mono bg-white p-4 rounded border border-gray-200">
-                "Hello [First Name], this is a reminder of your appointment with [Agent Name] on [Date] at [Time]."
+                "Hello [First Name], this is a reminder of your appointment with [Agent Name] on [Date] at [Time]. Reply STOP to opt out."
               </div>
             </div>
             <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
               <div className="text-sm font-semibold text-gray-900 mb-2">Service Status Updates</div>
               <div className="text-sm text-gray-700 font-mono bg-white p-4 rounded border border-gray-200">
-                "Your service request has been received. Our team will notify you once it is completed."
+                "Your service request has been received. Our team will notify you once it is completed. Reply STOP to opt out."
               </div>
             </div>
             <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
               <div className="text-sm font-semibold text-gray-900 mb-2">Billing Confirmations</div>
               <div className="text-sm text-gray-700 font-mono bg-white p-4 rounded border border-gray-200">
-                "Confirmation: Invoice #[Invoice Number] has been processed."
+                "Confirmation: Invoice #[Invoice Number] has been processed. Reply STOP to opt out."
               </div>
             </div>
             <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
               <div className="text-sm font-semibold text-gray-900 mb-2">Account Notifications</div>
               <div className="text-sm text-gray-700 font-mono bg-white p-4 rounded border border-gray-200">
-                "Notice: Your account settings were updated on [Date]. Contact support if this wasn't you."
+                "Notice: Your account settings were updated on [Date]. Contact support if this wasn't you. Reply STOP to opt out."
               </div>
             </div>
           </div>
@@ -573,7 +573,7 @@ function Signup() {
           </p>
         </div>
         
-        <form name="signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100">
+        <form name="signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you" className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100">
           <input type="hidden" name="form-name" value="signup" />
           <input type="hidden" name="bot-field" />
           
@@ -623,7 +623,7 @@ function Signup() {
                 </label>
               </div>
               <p className="text-xs text-gray-600 leading-relaxed">
-                By selecting "Yes", you consent to receive transactional service messages from CherryGrowth (e.g. appointment reminders, service updates, and billing confirmations) at the phone number provided above. Consent is not a condition of purchase. Message frequency varies. Message and data rates may apply. <strong>Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. <strong>Reply HELP</strong> for assistance. See our{' '}
+                By selecting "Yes", you consent to receive transactional service messages from Cherrygrowth (e.g. appointment reminders, service updates, and billing confirmations) at the phone number provided above. Consent is not a condition of purchase. Message frequency varies. Message and data rates may apply. <strong>Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. <strong>Reply HELP</strong> for assistance. See our{' '}
                 <Link to="/privacy" className="text-purple-600 hover:underline font-medium">Privacy Policy</Link> and{' '}
                 <Link to="/terms" className="text-purple-600 hover:underline font-medium">Terms of Service</Link>.
               </p>
@@ -639,6 +639,32 @@ function Signup() {
             </p>
           </div>
         </form>
+      </div>
+    </div>
+  )
+}
+
+function ThankYou() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-cyan-50 py-20">
+      <div className="max-w-xl mx-auto px-6 text-center">
+        <div className="bg-white rounded-2xl shadow-xl p-10 md:p-14 border border-gray-100">
+          <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">Thanks for signing up!</h1>
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            We've received your submission and will get back to you shortly.
+          </p>
+          <Link
+            to="/"
+            className="inline-block px-8 py-3 text-base font-semibold text-white bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg hover:shadow-xl transition-all"
+          >
+            Back to Home
+          </Link>
+        </div>
       </div>
     </div>
   )
@@ -687,7 +713,7 @@ function Privacy() {
     <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
       <div className="prose prose-lg max-w-none">
-        <p className="text-gray-600 mb-8">Last updated: ${new Date().toLocaleDateString()}</p>
+        <p className="text-gray-600 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
         
         <p className="text-gray-700 leading-relaxed mb-6">
           Cherrygrowth, LLC ("Cherrygrowth", "we", "us") provides AI-powered client communication services 
@@ -790,7 +816,7 @@ function Terms() {
     <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Terms of Service</h1>
       <div className="prose prose-lg max-w-none">
-        <p className="text-gray-600 mb-8">Last updated: ${new Date().toLocaleDateString()}</p>
+        <p className="text-gray-600 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
         
         <p className="text-gray-700 leading-relaxed mb-6">
           By using Cherrygrowth services, you agree to these Terms of Service.
@@ -812,7 +838,7 @@ function Terms() {
             <li><strong>Opt-In:</strong> Subscribe via our web forms, client portal, or by providing explicit consent 
             to a Cherrygrowth representative. <strong>Consent is not a condition of purchase.</strong></li>
             <li><strong>Frequency:</strong> Recurring; message frequency varies based on service activity</li>
-            <li><strong>Cost:</strong> Message and data rates may apply as charged by your mobile carrier</li>
+            <li><strong>Cost:</strong> Message and data rates may apply</li>
             <li><strong>Opt-Out: Reply STOP to cancel at any time.</strong> After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed.</li>
             <li><strong>Help: Reply HELP</strong> for assistance or contact admin@cherrygrowth.com or (310) 907-5746</li>
           </ul>
@@ -910,6 +936,7 @@ export default function App() {
             <Route path="/communications" element={<Communications />} />
             <Route path="/portal" element={<Portal />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/login" element={<Login />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
