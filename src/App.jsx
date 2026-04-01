@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom'
 
 function Header() {
   return (
@@ -563,6 +563,22 @@ function Portal() {
 }
 
 function Signup() {
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+    const formData = new FormData(form)
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate('/thank-you'))
+      .catch(() => navigate('/thank-you'))
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-cyan-50 py-20">
       <div className="max-w-2xl mx-auto px-6">
@@ -573,7 +589,7 @@ function Signup() {
           </p>
         </div>
         
-        <form name="signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you" className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100">
+        <form name="signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100">
           <input type="hidden" name="form-name" value="signup" />
           <input type="hidden" name="bot-field" />
           
